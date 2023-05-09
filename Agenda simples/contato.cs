@@ -61,6 +61,13 @@ namespace Agenda_simples
         public override string ToString()
         {
             string saida = String.Empty;
+            saida += String.Format("{0}, {1}", PrimeiroNome, Sobrenome);
+            saida += String.Format("{0}-{1}-{2}", 
+                Telefone.Substring(0, 1), 
+                Telefone.Substring(2, 4), 
+                Telefone.Substring(7, 3));
+            
+            return saida;
         }
 
     }
