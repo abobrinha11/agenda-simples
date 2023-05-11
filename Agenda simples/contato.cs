@@ -34,9 +34,10 @@ namespace Agenda_simples
             set
             {
                 if (value.Length == 11)
-                    telefone = value;
+                    telefone = value;               
+
                 else
-                    Telefone = "00-00000-0000";
+                    Telefone = "00000000000";
                 
             }
             
@@ -62,6 +63,7 @@ namespace Agenda_simples
         {
             string saida = String.Empty;
             saida += String.Format("{0}, {1}", PrimeiroNome, Sobrenome);
+            saida += "";
             saida += String.Format("{0}-{1}-{2}", 
                 Telefone.Substring(0, 1), 
                 Telefone.Substring(2, 4), 

@@ -103,19 +103,19 @@
             // 
             // lstContato
             // 
-            this.lstContato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstContato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstContato.FormattingEnabled = true;
-            this.lstContato.ItemHeight = 20;
-            this.lstContato.Location = new System.Drawing.Point(379, 45);
+            this.lstContato.Location = new System.Drawing.Point(284, 12);
             this.lstContato.Name = "lstContato";
-            this.lstContato.Size = new System.Drawing.Size(198, 264);
+            this.lstContato.Size = new System.Drawing.Size(158, 212);
             this.lstContato.TabIndex = 7;
+            this.lstContato.SelectedIndexChanged += new System.EventHandler(this.lstContato_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 364);
+            this.ClientSize = new System.Drawing.Size(476, 251);
             this.Controls.Add(this.lstContato);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtSobrenome);

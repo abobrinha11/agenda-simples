@@ -25,7 +25,12 @@ namespace Agenda_simples
         private void btnAddContato_Click(object sender, EventArgs e)
         {
             contato objcontato = new contato();
-            lstContato.Items.Add(objcontato).ToString;
+            lstContato.Items.Add(objcontato).ToString();
+        }
+
+        private void lstContato_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
