@@ -24,7 +24,7 @@ namespace Agenda_simples
 
         private void btnAddContato_Click(object sender, EventArgs e)
         {
-            contato objcontato = new contato();
+            contato objcontato = new contato(txtNome.Text, txtSobrenome.Text, Txtemail.Text, txtTelefone.Text);
             lstContato.Items.Add(objcontato).ToString();
         }
 

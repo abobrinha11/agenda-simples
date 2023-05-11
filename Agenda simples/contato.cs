@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ namespace Agenda_simples
         private string primeiroNome;
         private string sobrenome;
         private string telefone;
+        private string email;
 
         //PROPRIEDADES (GET e SET)
         public string PrimeiroNome
@@ -26,6 +28,11 @@ namespace Agenda_simples
         {
             get { return sobrenome; }
             set { sobrenome = value; }
+        }
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
         }
 
         public string Telefone 
@@ -49,25 +56,30 @@ namespace Agenda_simples
             PrimeiroNome = "José";
             Sobrenome = "Da Silva";
             Telefone = "11-91234-5678";
+            Email = "abacate@hotmail.com";
 
         }
 
-        public contato(string primeiroNome, string sobrenome, string telefone)
+        public contato(string primeiroNome, string sobrenome, string email, string telefone)
         {
             PrimeiroNome = primeiroNome;
             Sobrenome = sobrenome;
             Telefone = telefone;
+            Email = email;
         }
 
         public override string ToString()
         {
             string saida = String.Empty;
-            saida += String.Format("{0}, {1}", PrimeiroNome, Sobrenome);
+            saida += String.Format("{0}, {1}, {2},", PrimeiroNome, Sobrenome, Email);
             saida += "";
-            saida += String.Format("{0}-{1}-{2}", 
-                Telefone.Substring(0, 1), 
-                Telefone.Substring(2, 4), 
-                Telefone.Substring(7, 3));
+            saida += String.Format("({0}-{1}-{2})", 
+                Telefone.Substring(0, 2), 
+                Telefone.Substring(2, 5), 
+                Telefone.Substring(7, 4));
+           
+            saida += " ";
+            //saida += String.Format("{0}", Email);
             
             return saida;
         }
