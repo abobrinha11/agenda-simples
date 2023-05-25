@@ -38,6 +38,7 @@
             this.lstContato = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Txtemail = new System.Windows.Forms.TextBox();
+            this.btnOrdenar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -109,7 +110,7 @@
             this.lstContato.FormattingEnabled = true;
             this.lstContato.Location = new System.Drawing.Point(264, 12);
             this.lstContato.Name = "lstContato";
-            this.lstContato.Size = new System.Drawing.Size(252, 212);
+            this.lstContato.Size = new System.Drawing.Size(252, 160);
             this.lstContato.TabIndex = 7;
             this.lstContato.SelectedIndexChanged += new System.EventHandler(this.lstContato_SelectedIndexChanged);
             // 
@@ -130,11 +131,23 @@
             this.Txtemail.Size = new System.Drawing.Size(100, 20);
             this.Txtemail.TabIndex = 9;
             // 
+            // btnOrdenar
+            // 
+            this.btnOrdenar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdenar.Location = new System.Drawing.Point(286, 178);
+            this.btnOrdenar.Name = "btnOrdenar";
+            this.btnOrdenar.Size = new System.Drawing.Size(212, 44);
+            this.btnOrdenar.TabIndex = 10;
+            this.btnOrdenar.Text = "ordenar";
+            this.btnOrdenar.UseVisualStyleBackColor = true;
+            this.btnOrdenar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(528, 242);
+            this.Controls.Add(this.btnOrdenar);
             this.Controls.Add(this.Txtemail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lstContato);
@@ -147,6 +160,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,6 +178,7 @@
         private System.Windows.Forms.ListBox lstContato;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Txtemail;
+        private System.Windows.Forms.Button btnOrdenar;
     }
 }
 
