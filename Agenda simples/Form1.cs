@@ -28,8 +28,10 @@ namespace Agenda_simples
         private void btnAddContato_Click(object sender, EventArgs e)
         {
              
-            contato objetocontato = new contato(txtNome.Text, txtSobrenome.Text, Txtemail.Text, txtTelefone.Text);
+            contato objetocontato = new contato(txtNome.Text, 
+                txtSobrenome.Text, txtTelefone.Text, Txtemail.Text);
             Escrever(objetocontato);
+            Ordenar();
             Ler();
             AtualizarDisplay();
             LimparFormulario();
